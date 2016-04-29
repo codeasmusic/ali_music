@@ -1,0 +1,10 @@
+{% extends "music/base.html" %}
+
+{% block content %}
+
+    <form action="/query_an_artist" method="get">
+        <input type="text" size="35" placeholder="请输入歌手的 artist_id" name="aid">
+        <input type="submit" value="Search">
+    </form>
+
+{% endblock %}
